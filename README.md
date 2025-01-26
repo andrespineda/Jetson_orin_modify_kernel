@@ -18,17 +18,22 @@ tar -xvf Jetson_Linux_R36.4.3_aarch64.tbz2
 ## Install the required build tools:
 
 sudo apt update
+
 sudo apt install git wget quilt build-essential bc libncurses5-dev libncursesw5-dev rsync
 
 
 ## Download and extract cross-compilation toolchain
 
 mkdir ~/l4t-gcc
+
 cd ~/l4t-gcc
+
 wget -O toolchain.tar.xz https://developer.nvidia.com/embedded/jetson-linux/bootlin-toolchain-gcc-93
+
 sudo tar -xf toolchain.tar.xz
 
 ## Set up environment variables
+
 // The following export is only for building on the laptop host (Not the Jetson)
 
 export CROSS_COMPILE=~/l4t-gcc/bin/aarch64-buildroot-linux-gnu-
