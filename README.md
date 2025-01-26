@@ -11,7 +11,7 @@ https://developer.nvidia.com/embedded/jetson-linux
 
 wget https://developer.nvidia.com/downloads/embedded/l4t/r36_release_v4.3/release/Jetson_Linux_r36.4.3_aarch64.tbz2
 
-tar -xvf Jetson_Linux_r36.4.3_aarch64.tbz2
+tar -xvf Jetson_Linux_R36.4.3_aarch64.tbz2
 
 ./source_sync.sh -k -t jetson_36.4.3
 
